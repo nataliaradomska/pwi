@@ -1,28 +1,76 @@
 
 header{
     background-color: blue;
+    text-align: center;
+    font-size: 150%;
+    font-style: oblique;
+    color: white;
 }
 
 footer{
     background-color: aqua;
+    text-align: right;
+    font-size: 70%;
+    font-style: italic;
 }
 
 #menu{
     background-color: red;
+    color: white;
 }
 
 .artykul{
     background-color: aquamarine;
     flex: 2;
+    color: black;
+    font-style: unset;
+    text-shadow: 2px 2px #FF0000;
+    
 }
 
 .side{
     background-color: chartreuse;
     flex: 1;
+    color: orangered;
+    text-align: center;
+
 }
 
 main{
 
     display: flex;
+
+}
+
+p, body{
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+li{
+
+    display: inline-block;
+    width: 33%;
+}
+
+a{
+    color: green;
+    display: inline-block;
+    width: 33%;
+    
+}
+
+a:hover{
+background-color: pink;
 
 }
