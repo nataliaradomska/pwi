@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello World</title>
+<meta charset="UTF-8">
+<style>
+    #kwadrat1 {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    }
+
+    #kwadrat1 {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    }
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<div id="kwadrat1"></div>
+
+    <p><a href="#" id="pokaz">Pokaz</a>
+    <a href="#" id="schowaj">Schowaj</a></p>
+
+<div id="kwadrat2"></div>
+<p><a href="#" id="anim">Animuj</a></p>
+
+<a href="#" id="zaprezentuj">Zmien</a>
+<div id="kontener">
+
+<p>Ala ma kota</p>
+
+</div>
+
+
+    <script>
+    
+    //$("#pokaz" ).click(function (event) {
+ // if ( $( "kwadrat1:first" ).is( ":hidden" ) ) {
+   // $( "kwadrat1" ).slideDown( "slow" );
+  //} else {
+   // $( "kwadrat1" ).hide();
+  //}
+//});
+
+
+$("#pokaz").click(function (event) {
+    $('#kwadrat1').slideDown("slow"); });
+ 
+$( "schowaj").click(function(event) {
+  if ( $( "kwadrat1:first" ).is( ":hidden" ) ) {
+    $( "kwadrat1" ).show( "slow" );
+  } else {
+    $( "kwadrat1" ).slideUp();
+  }
+});
+
+
+
+$( "#anim" ).click(function() {
+  $( "#kwadrat1" ).animate({
+    width: "400px",
+    height: "400px",
+    opacity: 0.5, //od 0 do 1
+
+  }, 4000 ); //milisekundy
+});
+
+$("#zaprezentuj").click(function (event) {
+    $('#kontener').slideDown("slow"); });
+    
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
